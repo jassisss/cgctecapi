@@ -13,7 +13,7 @@ module.exports = function (server, knex, errs) {
 	      .where('user.email', email)
 	      .first()
 	      .then((dados) => {
-	          if(!dados) return res.send(new errs.BadRequestError('nada foi encontrado'));
+	          if(!dados) return res.send(new errs.BadRequestError('Email não encontrado'));
 	          password_token = dados.password_token;
 	          password = md5(password + password_token);
 	      	  knex

@@ -6,6 +6,7 @@ module.exports = function (server, knex, errs) {
 	  
 	  var email = req.body.email;
 	  var password = req.body.password;
+	  var newpassword = req.body.newpassword;
 	  var password_token = '';
 	  var id = 0;
 
@@ -14,15 +15,16 @@ module.exports = function (server, knex, errs) {
 	      .where('user.email', email)
 	      .first()
 	      .then((dados) => {
-	          if(!dados) return res.send(new errs.BadRequestError('nada foi encontrado'));
+	          if(!dados) return res.send(new errs.BadRequestError('Email não encontrado'));
 	          password_token = dados.password_token;
 	          id = dados.id;
 	          password = md5(password + password_token);
+	          newpassword = md5(newpassword + password_token)
 	          knex('user')
-	              .where('id', id)
-	              .update('user.password', password)
+	              .where( {'id': id, 'password': password} )
+	              .update('user.password', newpassword)
 	              .then((dados) => {
-	                  if(!dados) return res.send(new errs.BadRequestError('erro na alteração'))
+	                  if(!dados) return res.send(new errs.BadRequestError('Password atual incorreta'))
 	                  res.send('senha atualizada');
 	              }, next)
 

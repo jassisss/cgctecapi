@@ -17,9 +17,3 @@ consign().include('./restfull/userstatus').into(server, knex, errs);
 
 consign().include('./restfull/user').into(server, knex, errs);
 
-
-
-
-
-
-
