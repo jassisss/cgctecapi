@@ -1,6 +1,6 @@
 module.exports = function (server, knex, errs) {
 
-	server.post('/senha', function(req, res, next) {
+	server.post('/password', function(req, res, next) {
 	  
 	  const md5 = require('md5');
 	  
