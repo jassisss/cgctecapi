@@ -1,5 +1,5 @@
 
-var knex = require('knex')({
+const knex = require('knex')({
     client: 'mysql',
     connection: {
       host : '127.0.0.1',

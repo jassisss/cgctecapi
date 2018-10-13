@@ -8,7 +8,7 @@ module.exports = function (server, knex, errs) {
 	        .where('id', id)
 	        .update(req.body)
 	        .then((dados) => {
-	            if(!dados) return res.send(new errs.BadRequestError('erro na alteração'))
+	            if(!dados) return res.send(new errs.NotFoundError('erro na alteração'))
 	            res.send('dados atualizados');
 	        }, next)
 	        

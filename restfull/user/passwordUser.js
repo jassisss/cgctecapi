@@ -24,7 +24,7 @@ module.exports = function (server, knex, errs) {
 	              .where( {'id': id, 'password': password} )
 	              .update('user.password', newpassword)
 	              .then((dados) => {
-	                  if(!dados) return res.send(new errs.BadRequestError('Password atual incorreta'))
+	                  if(!dados) return res.send(new errs.UnauthorizedError('Password atual incorreta'))
 	                  res.send('senha atualizada');
 	              }, next)
 
