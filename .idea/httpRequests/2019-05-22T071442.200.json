@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "José de Assis Santos da Silva",
+    "email": "jassis@cgctec.com.br",
+    "password": "78f1aadd8e8ba2b7f12ddc7eec4373e2",
+    "password_token": "14c332e5d75ba4fdc82dc95c82190cb7",
+    "date_create": "2018-10-08T08:10:08.000Z",
+    "date_update": "2018-10-08T08:10:08.000Z",
+    "user_type_id": 1,
+    "user_status_id": 1,
+    "password_reset_token": "2094a90f2baf06fc50e6c645fc6ddc16",
+    "password_reset_token_expired": "2018-10-13T08:48:21.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Claudinéia Gomes Martins",
+    "email": "cmcacau@gmail.com",
+    "password": "fdca5e8ec76172a83f0db712b3533043",
+    "password_token": "121d8a3fa07be648fc6963d7a3b30f8c",
+    "date_create": "2018-10-08T08:12:04.000Z",
+    "date_update": "2018-10-08T08:12:04.000Z",
+    "user_type_id": 1,
+    "user_status_id": 1,
+    "password_reset_token": null,
+    "password_reset_token_expired": null
+  },
+  {
+    "id": 4,
+    "name": "Raimundo Saraiva",
+    "email": "raimundo@email.com",
+    "password": "42293a7905921a7743d10c2ebd04a7e9",
+    "password_token": "3fe1dd51d689acbdb75c51de607fd8aa",
+    "date_create": "2018-10-08T09:09:08.000Z",
+    "date_update": "2018-10-08T09:09:08.000Z",
+    "user_type_id": 2,
+    "user_status_id": 2,
+    "password_reset_token": null,
+    "password_reset_token_expired": null
+  },
+  {
+    "id": 7,
+    "name": "Cabral Dias Gomes",
+    "email": "dcabral@email.com",
+    "password": "5178c742336bd91d357b3b3329ceddaa",
+    "password_token": "503fdc16392111e9c5450f1e9c7d2edb",
+    "date_create": "2018-10-08T09:20:26.000Z",
+    "date_update": "2018-10-08T21:14:16.000Z",
+    "user_type_id": 2,
+    "user_status_id": 6,
+    "password_reset_token": null,
+    "password_reset_token_expired": null
+  },
+  {
+    "id": 10,
+    "name": "João Carlos",
+    "email": "jcarlos@email.com",
+    "password": "1e5f482f798c1ba2cdd1f063230c9639",
+    "password_token": "846dfde54663671f177a4c16c93a37d8",
+    "date_create": "2018-10-08T09:23:34.000Z",
+    "date_update": "2018-10-08T09:23:34.000Z",
+    "user_type_id": 2,
+    "user_status_id": 2,
+    "password_reset_token": null,
+    "password_reset_token_expired": null
+  },
+  {
+    "id": 12,
+    "name": "José de Assis Santos da Silva",
+    "email": "jassis@ibist.org.br",
+    "password": "5bfc41f9f8164619e187597034523c10",
+    "password_token": "9b759830c56fbd1e885a2c6d9afdc737",
+    "date_create": "2018-10-12T07:14:00.000Z",
+    "date_update": "2018-10-12T07:14:00.000Z",
+    "user_type_id": 1,
+    "user_status_id": 1,
+    "password_reset_token": "6f67cc09683f5d4c56ed3cebb9ebfd97",
+    "password_reset_token_expired": "2018-10-12T11:04:59.000Z"
+  }
+]
