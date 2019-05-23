@@ -1,6 +1,6 @@
 module.exports = function (server, knex, errs) {
 
-	server.del('/usertypes/:id', (req, res, next) => {
+	server.del('/usertype/:id', (req, res, next) => {
 	    
 	    const { id } = req.params;
 

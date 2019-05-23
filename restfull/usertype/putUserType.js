@@ -1,6 +1,6 @@
 module.exports = function (server, knex, errs) {
 
-	server.put('/usertypes/:id', (req, res, next) => {
+	server.put('/usertype/:id', (req, res, next) => {
 	    
 	    const { id } = req.params;
 

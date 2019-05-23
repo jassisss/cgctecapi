@@ -1,3 +1,58 @@
+GET http://localhost:8080/product
+Accept: application/json
+
+<> 2019-05-23T122422.200.json
+
+###
+
+GET http://localhost:8080/usertype
+Accept: application/json
+
+<> 2019-05-23T122013.200.json
+
+###
+
+GET http://localhost:8080/usertypes
+Accept: application/json
+
+<> 2019-05-23T122001.404.json
+
+###
+
+GET https://localhost:8080/usertypes
+Accept: application/json
+
+###
+
+GET http://localhost:8080/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-05-22T091844.200.json
+
+###
+
+GET http://localhost:8080/userstatus
+Accept: application/json
+
+<> 2019-05-22T082928.200.json
+
+###
+
+GET http://localhost:8080/usertypes
+Accept: application/json
+
+<> 2019-05-22T082615.200.json
+
+###
+
+GET http://localhost:8080/usertype
+Accept: application/json
+
+<> 2019-05-22T082554.404.json
+
+###
+
 GET http://localhost:8080/user
 Accept: */*
 Cache-Control: no-cache

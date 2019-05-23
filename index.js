@@ -9,11 +9,15 @@ consign().include('./email/').into(server, knex, errs);
 
 // rotas REST para o user_type
 
-consign().include('./restfull/usertypes').into(server, knex, errs);
+consign().include('./restfull/usertype').into(server, knex, errs);
 
 // rotas REST para o user_status
 
 consign().include('./restfull/userstatus').into(server, knex, errs);
+
+// rotas REST para o product
+
+consign().include('./restfull/product').into(server, knex, errs);
 
 // rotas REST para o user
 

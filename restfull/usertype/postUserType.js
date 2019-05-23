@@ -1,6 +1,6 @@
 module.exports = function (server, knex, errs) {
 
-	server.post('/usertypes', (req, res, next) => {
+	server.post('/usertype', (req, res, next) => {
 	    
 	    knex('user_type')
 	        .insert(req.body)
